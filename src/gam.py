@@ -3436,6 +3436,8 @@ def downloadDriveFile(users):
                       u'application/vnd.openxmlformats-officedocument.presentationml.presentation']
   elif gdownload_format == u'pdf':
     export_formats = [u'application/pdf',]
+  elif gdownload_format == u'csv':
+    export_formats = [u'text/csv',]
   if not query and not fileIds:
     print u'ERROR: need to specify a file ID with id parameter or a search query with the query parameter.'
     sys.exit(2)
